@@ -19,6 +19,10 @@
     line-height: 1.6;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   main {
     display: flex;
     flex-direction: column;
@@ -35,6 +39,29 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     max-width: 900px;
     width: 100%;
+  }
+
+  .home-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #ededed;
+    color: #4B5658;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 12px 24px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    margin-bottom: 30px;
+  }
+
+  .home-link:hover {
+    background: #d6d6d6;
+    color: #2c3e50;
+    transform: translateY(-2px) scale(1.04);
+    text-decoration: none;
   }
 
   h1 {
@@ -152,11 +179,14 @@
     font-size: 2em;
     color: #4B5658;
     transition: all 0.3s ease;
+    vertical-align: middle;
+    line-height: 1;
+    display: inline-block;
   }
 
   .icons-social a:hover i {
     color: #2c3e50;
-    transform: scale(1.1);
+    transform: scale(1.15);
   }
 
   @media (max-width: 768px) {
@@ -165,8 +195,10 @@
     }
 
     main {
-      min-height: auto;
+      min-height: 100vh;
       padding: 20px;
+      justify-content: flex-start;
+      padding-top: 30px;
     }
 
     .tagline {
@@ -179,6 +211,10 @@
 
     h2 {
       font-size: 1.5em;
+    }
+
+    ul > li {
+      font-size: 0.95em;
     }
   }
 </style>
@@ -202,6 +238,10 @@
 
 <body>
   <main>
+    <a href="./index.html" class="home-link">
+      <i class="fas fa-home"></i>
+      Back to Home
+    </a>
     <div class="tagline">
       <h1>Adventures</h1>
       <h2 id="road-bike-mountain-climbs">Road bike mountain climbs</h2>
@@ -306,9 +346,6 @@
 <li><a href="https://www.strava.com/activities/12039360583">Tagliaferro - Firenze <i class="fab fa-strava"></i></a></li>
 </ul></li>
 </ul>
-      <div class="icons-social">
-        <a href="https://frr0.github.io/"><i class="fas fa-home"></i></a>
-      </div>
     </div>
   </main>
 </body>
