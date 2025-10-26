@@ -73,6 +73,7 @@
     padding-left: 25px;
     position: relative;
     line-height: 1.7;
+    word-wrap: break-word;
   }
 
   ul > li:before {
@@ -159,6 +160,9 @@
   }
 
   @media (max-width: 768px) {
+    body {
+      overflow-x: hidden;
+    }
     .tagline {
       padding: 30px 25px;
     }
