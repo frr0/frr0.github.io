@@ -1,175 +1,306 @@
-<h1 id="road-bike-mountain-climbs">Road bike mountain climbs</h1>
+<style>
+  html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #ededed;
+    color: #4B5658;
+    line-height: 1.6;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    padding: 40px 20px;
+    align-items: center;
+  }
+
+  .tagline {
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    max-width: 900px;
+    width: 100%;
+  }
+
+  h1 {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    color: #4B5658;
+    margin-bottom: 40px;
+    border-bottom: 4px solid #4B5658;
+    padding-bottom: 20px;
+  }
+
+  h2 {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #4B5658;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 5px solid #4B5658;
+  }
+
+  h2:first-of-type {
+    margin-top: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 30px 0;
+  }
+
+  ul > li {
+    padding: 10px 0;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.7;
+  }
+
+  ul > li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #4B5658;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  ul ul {
+    margin: 8px 0 8px 0;
+    padding-left: 40px;
+    list-style: none;
+  }
+
+  ul ul li {
+    padding: 6px 0;
+    padding-left: 0;
+    font-size: 0.95em;
+    position: relative;
+  }
+
+  ul ul li:before {
+    content: none;
+  }
+
+  /* Pallini per Training Camps */
+  #training-camps ul ul {
+    list-style: none;
+  }
+
+  #training-camps ul ul li:before {
+    content: "• ";
+    color: #95a5a6;
+    position: static;
+  }
+
+  /* Elenco numerato per i sottomenu di Bikepackings e Trekkings */
+  #bikepackings ul ul,
+  #trekkings-backpackings ul ul {
+    list-style: decimal;
+  }
+
+  a {
+    color: #4B5658;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+
+  a:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+  }
+
+  ul li a {
+    display: block;
+    width: 100%;
+  }
+
+  ul li a .fa-strava {
+    margin-left: 8px;
+    font-size: 0.9em;
+  }
+
+  .icons-social {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #ecf0f1;
+    text-align: center;
+  }
+
+  .icons-social i {
+    font-size: 2em;
+    color: #4B5658;
+    transition: all 0.3s ease;
+  }
+
+  .icons-social a:hover i {
+    color: #2c3e50;
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 768px) {
+    .tagline {
+      padding: 30px 25px;
+    }
+
+    h1 {
+      font-size: 2.2em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+</style>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Francesco Ranellucci</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+
+</head>
+
+<body>
+  <main>
+    <div class="tagline">
+      <h1>Adventures</h1>
+      <h2 id="road-bike-mountain-climbs">Road bike mountain climbs</h2>
 <ul>
-<li><a href="https://www.strava.com/activities/15503804219">Saint
-Pantaleon - Cervinia - Col Tzecore - Col de joux - Issime</a> (207km -
-5055m) - 2025</li>
-<li><a href="https://www.strava.com/activities/14526753797">Colletta di
-Cumiana - Colle del Cro - Colle della Vaccera - Montoso - Madda</a>
-(192km - 3954m) - 2025</li>
-<li><a href="https://www.strava.com/activities/14733561118">Colle delle
-Finestre</a> (94km - 1878m) - 2025</li>
-<li><a href="https://www.strava.com/activities/15446183671">Nivolet</a>
-(219km - 2879m) - 2025</li>
-<li><a href="https://www.strava.com/activities/15201766028">Mont
-Ventoux</a> (110km - 2334m) - 2025</li>
-<li><a href="https://www.strava.com/activities/15379758250">Moncenisio -
-Iseran</a> (90km - 3230m) - 2025</li>
-<li><a href="https://www.strava.com/activities/15390539197">Piccolo San
-Bernardo - Aosta Valley</a> (175km - 1825m) - 2025</li>
-<li><a href="https://www.strava.com/activities/15422013916">Izoard</a>
-(105km, 2462m) - 2025</li>
-<li><a href="https://www.strava.com/activities/14033037238">Col del
-Lys</a> (112km - 1364m) - 2025</li>
-<li><a href="https://www.strava.com/activities/15253504548">Tibidabo</a>
-(84km - 1619m) - 2025</li>
-<li><a href="https://www.strava.com/activities/9586783988">Chiaves -
-Sant’Ignazio - Benne di Corio</a> - 2023</li>
-<li><a href="https://www.strava.com/activities/9065028494">Sacra di San
-Michele e Colle Braida</a> - 2023</li>
-<li><a href="https://www.strava.com/activities/9532096848">Colle della
-Maddalena</a> - 2023</li>
-<li><a href="https://www.strava.com/activities/9010632816">Superga</a> -
-2023</li>
+<li><a href="https://www.strava.com/activities/15503804219">Saint Pantaleon - Cervinia - Col Tzecore - Col de joux - Issime (207km - 5055m) - 2025 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/14526753797">Colletta di Cumiana - Colle del Cro - Colle della Vaccera - Montoso - Madda (192km - 3954m) - 2025 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/14733561118">Colle delle Finestre (94km - 1878m) - 2025 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/15446183671">Nivolet (219km - 2879m) - 2025 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/15201766028">Mont Ventoux (110km - 2334m) - 2025 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/15379758250">Moncenisio - Iseran (90km - 3230m) - 2025 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/15390539197">Piccolo San Bernardo - Aosta Valley (175km - 1825m) - 2025 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/15422013916">Izoard (105km, 2462m) - 2025 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/14033037238">Col del Lys (112km - 1364m) - 2025 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/15253504548">Tibidabo (84km - 1619m) - 2025 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/9586783988">Chiaves - Sant'Ignazio - Benne di Corio - 2023 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/9065028494">Sacra di San Michele e Colle Braida - 2023 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/9532096848">Colle della Maddalena - 2023 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/9010632816">Superga - 2023 <i class="fab fa-strava"></i></a></li>
 </ul>
-<h1 id="notable-rides">Notable rides</h1>
+<h2 id="notable-rides">Notable rides</h2>
 <ul>
-<li><a href="https://www.strava.com/activities/12476318644">Torino -
-Milano</a> (155km - 204m) - 2024</li>
-<li><a href="https://www.strava.com/activities/12205668404">Torino -
-Albenga</a> (200km - 1419m) - 2024</li>
-<li><a href="https://www.strava.com/activities/12170004586">Castelnuovo
-Don Bosco</a> (100km - 960m) - 2024</li>
-<li><a href="https://www.strava.com/activities/11339948029">Torino -
-Oropa</a> (111km - 931m) - 2024</li>
-<li><a href="https://www.strava.com/activities/8855727489">Torino -
-Savona</a> (139km - 936m) - 2023</li>
+<li><a href="https://www.strava.com/activities/12476318644">Torino - Milano (155km - 204m) - 2024 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/12205668404">Torino - Albenga (200km - 1419m) - 2024 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/12170004586">Castelnuovo Don Bosco (100km - 960m) - 2024 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/11339948029">Torino - Oropa (111km - 931m) - 2024 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/8855727489">Torino - Savona (139km - 936m) - 2023 <i class="fab fa-strava"></i></a></li>
 </ul>
-<h1 id="bikepackings">Bikepackings</h1>
+<h2 id="bikepackings">Bikepackings</h2>
 <ul>
 <li>Oulx (Italy) - Barcelona (Spain) - 2025
 <ul>
-<li><a href="https://www.strava.com/activities/15166378004">Oulx -
-Embrun</a></li>
-<li><a href="https://www.strava.com/activities/15180171854">Enbrun -
-Saint-Roman-de-Malegarde</a></li>
-<li><a href="https://www.strava.com/activities/15201766028">Mont Ventoux
-- TDF</a></li>
-<li><a
-href="https://www.strava.com/activities/15211110628">Saint-Roman-de-Malegarde
-- Montpellier</a></li>
-<li><a href="https://www.strava.com/activities/15222374639">Perpignan -
-Girona</a></li>
-<li><a href="https://www.strava.com/activities/15231878577">Girona -
-Barcelona</a></li>
+<li><a href="https://www.strava.com/activities/15166378004">Oulx - Embrun <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/15180171854">Enbrun - Saint-Roman-de-Malegarde <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/15201766028">Mont Ventoux - TDF <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/15211110628">Saint-Roman-de-Malegarde - Montpellier <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/15222374639">Perpignan - Girona <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/15231878577">Girona - Barcelona <i class="fab fa-strava"></i></a></li>
 </ul></li>
 <li>Bussoleno (Italy) - Ivrea (Italy) 2025
 <ul>
-<li><a href="https://www.strava.com/activities/15379758250">Bussoleno -
-Val d’Isere</a></li>
-<li><a href="https://www.strava.com/activities/15390539197">Val d’Isere
-- Ivrea</a></li>
+<li><a href="https://www.strava.com/activities/15379758250">Bussoleno - Val d'Isere <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/15390539197">Val d'Isere - Ivrea <i class="fab fa-strava"></i></a></li>
 </ul></li>
 <li>Marseille (France) - Albenga (Italy) - 2022
 <ul>
-<li><a href="https://www.strava.com/activities/7590755188">Marseille -
-La Ciotat (Stage 1/6)</a></li>
-<li><a href="https://www.strava.com/activities/7598381444">La Ciotat -
-Hyeres (Stage 2/6)</a></li>
-<li><a href="https://www.strava.com/activities/7604270894">Hyeres -
-Saint Raphael (Stage 3/6)</a></li>
-<li><a href="https://www.strava.com/activities/7608082967">Saint Raphael
-- Antibes (Stage 4/6)</a></li>
-<li><a href="https://www.strava.com/activities/7617131913">Antibes -
-Vallebona (Stage 5/6)</a></li>
-<li><a href="https://www.strava.com/activities/7620117425">Vallebona -
-Albenga (Stage 6/6)</a></li>
+<li><a href="https://www.strava.com/activities/7590755188">Marseille - La Ciotat (Stage 1/6) <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/7598381444">La Ciotat - Hyeres (Stage 2/6) <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/7604270894">Hyeres - Saint Raphael (Stage 3/6) <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/7608082967">Saint Raphael - Antibes (Stage 4/6) <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/7617131913">Antibes - Vallebona (Stage 5/6) <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/7620117425">Vallebona - Albenga (Stage 6/6) <i class="fab fa-strava"></i></a></li>
 </ul></li>
 </ul>
-<h1 id="training-camps">Training Camps</h1>
+<h2 id="training-camps">Training Camps</h2>
 <ul>
 <li>Tuscany Training Camp - 2025
 <ul>
-<li><a href="https://www.strava.com/activities/13760560165">Training
-camp day 1.1</a></li>
-<li><a href="https://www.strava.com/activities/13761483800">Training
-camp day 1.2</a></li>
-<li><a href="https://www.strava.com/activities/13769236403">Training
-camp day 2</a></li>
-<li><a href="https://www.strava.com/activities/13776526148">Training
-camp day 3</a></li>
-<li><a href="https://www.strava.com/activities/13787446388">Training
-camp day 4</a></li>
-<li><a href="https://www.strava.com/activities/13795710385">Training
-camp day 5</a></li>
-<li><a href="https://www.strava.com/activities/13806200204">Training
-camp day 6</a></li>
-<li><a href="https://www.strava.com/activities/13814178431">Training
-camp day 7</a></li>
-<li><a href="https://www.strava.com/activities/13820905370">Training
-camp day 8</a></li>
+<li><a href="https://www.strava.com/activities/13760560165">Training camp day 1.1 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/13761483800">Training camp day 1.2 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/13769236403">Training camp day 2 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/13776526148">Training camp day 3 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/13787446388">Training camp day 4 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/13795710385">Training camp day 5 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/13806200204">Training camp day 6 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/13814178431">Training camp day 7 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/13820905370">Training camp day 8 <i class="fab fa-strava"></i></a></li>
 </ul></li>
 </ul>
-<h1 id="hikes">Hikes</h1>
+<h2 id="hikes">Hikes</h2>
 <ul>
-<li><a href="https://www.strava.com/activities/14367528397">Monte
-Soglio</a> - 2025</li>
-<li><a href="https://www.strava.com/activities/13216495873">Fontana
-mura, colle della Roussa e lago Rouen</a> - 2024</li>
-<li><a href="https://www.strava.com/activities/13080178207">Bivacco lago
-Laus e lago della Manica</a> - 2024</li>
-<li><a href="https://www.strava.com/activities/13238227344">Bivacco
-Balma</a> - 2024</li>
-<li><a href="https://www.strava.com/activities/12813733111">Bivacco Gias
-Nuovo + bivacco Soardi Fassero</a> - 2024</li>
-<li><a href="https://www.strava.com/activities/13146646465">Rifugio
-Portia - Col del Lys</a> - 2024</li>
-<li><a href="https://www.strava.com/activities/11030170647">Roc Neir</a>
-- 2024</li>
-<li><a href="https://www.strava.com/activities/13033906297">Passo della
-Croce</a> - 2024</li>
-<li><a href="https://www.strava.com/activities/12227711125">Santa
-Cristina da Ceres</a> - 2024</li>
-<li><a href="https://www.strava.com/activities/11598792329">Il Turu</a>
-- 2024</li>
-<li><a href="https://www.strava.com/activities/12916205208">Punta
-Aquila</a> - 2024</li>
-<li><a href="https://www.strava.com/activities/10572390195">Rocca
-Sella</a> - 2024</li>
-<li><a href="https://www.strava.com/activities/10558340133">Rifugio
-Amprimo - Rifugio Toesca</a> - 2024</li>
-<li><a href="https://www.strava.com/activities/10395636371">Forte
-Pramand - Galleria del Seguret - Forte al Seguret</a> - 2023</li>
-<li><a href="https://www.strava.com/activities/10359334072">Monte
-Cotolivier</a> - 2023</li>
-<li><a href="https://www.strava.com/activities/10284802714">Sacra di San
-Michele</a> - 2023</li>
-<li><a href="https://www.strava.com/activities/10206280183">Colle della
-Maddalena - Torino</a> - 2023</li>
-<li><a href="https://www.strava.com/activities/9926021747">Puig de Sant
-Martì - Alcudia, Spain</a> - 2023</li>
-<li><a href="https://www.strava.com/activities/9670537878">Monte San
-Giorgio - Piossasco</a> - 2023</li>
-<li><a href="https://www.strava.com/activities/9542161649">Monte
-Musinè</a> - 2023</li>
-<li><a href="https://www.strava.com/activities/8877144166">Goja del pis
-- Almese</a> - 2023</li>
-<li><a href="https://www.strava.com/activities/7515442960">Santuario
-della Madonna di Ciavanis - Vonzo a Chialamberto, valli di Lanzo</a> -
-2022</li>
+<li><a href="https://www.strava.com/activities/14367528397">Monte Soglio - 2025 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/13216495873">Fontana mura, colle della Roussa e lago Rouen - 2024 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/13080178207">Bivacco lago Laus e lago della Manica - 2024 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/13238227344">Bivacco Balma - 2024 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/12813733111">Bivacco Gias Nuovo + bivacco Soardi Fassero - 2024 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/13146646465">Rifugio Portia - Col del Lys - 2024 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/11030170647">Roc Neir - 2024 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/13033906297">Passo della Croce - 2024 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/12227711125">Santa Cristina da Ceres - 2024 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/11598792329">Il Turu - 2024 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/12916205208">Punta Aquila - 2024 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/10572390195">Rocca Sella - 2024 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/10558340133">Rifugio Amprimo - Rifugio Toesca - 2024 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/10395636371">Forte Pramand - Galleria del Seguret - Forte al Seguret - 2023 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/10359334072">Monte Cotolivier - 2023 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/10284802714">Sacra di San Michele - 2023 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/10206280183">Colle della Maddalena - Torino - 2023 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/9926021747">Puig de Sant Martì - Alcudia, Spain - 2023 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/9670537878">Monte San Giorgio - Piossasco - 2023 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/9542161649">Monte Musinè - 2023 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/8877144166">Goja del pis - Almese - 2023 <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/7515442960">Santuario della Madonna di Ciavanis - Vonzo a Chialamberto, valli di Lanzo - 2022 <i class="fab fa-strava"></i></a></li>
 </ul>
-<h1 id="trekkings-backpackings">Trekkings (backpackings)</h1>
+<h2 id="trekkings-backpackings">Trekkings (backpackings)</h2>
 <ul>
 <li>Via degli Dei (Bologna - Firenze) - 2024
 <ul>
-<li><a href="https://www.strava.com/activities/12005277474">Bologna -
-Brento</a></li>
-<li><a href="https://www.strava.com/activities/12011321077">Brento -
-Madonna dei fornelli</a></li>
-<li><a href="https://www.strava.com/activities/12039308142">Madonna dei
-Fornelli - Passo dell’Osteria Bruciata</a></li>
-<li><a href="https://www.strava.com/activities/12039336345">Passo
-Osteria Bruciata - Tagliaferro</a></li>
-<li><a href="https://www.strava.com/activities/12039360583">Tagliaferro
-- Firenze</a></li>
+<li><a href="https://www.strava.com/activities/12005277474">Bologna - Brento <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/12011321077">Brento - Madonna dei fornelli <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/12039308142">Madonna dei Fornelli - Passo dell'Osteria Bruciata <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/12039336345">Passo Osteria Bruciata - Tagliaferro <i class="fab fa-strava"></i></a></li>
+<li><a href="https://www.strava.com/activities/12039360583">Tagliaferro - Firenze <i class="fab fa-strava"></i></a></li>
 </ul></li>
 </ul>
+      <div class="icons-social">
+        <a target="_blank" href="./index.html"><i class="fas fa-home"></i></a>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

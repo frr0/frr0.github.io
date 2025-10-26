@@ -1,7 +1,7 @@
 <style>
   html {
     box-sizing: border-box;
-    font-size: 12px;
+    font-size: 16px;
   }
 
   *,
@@ -10,122 +10,135 @@
     box-sizing: inherit;
   }
 
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ol,
-  ul {
+  body {
     margin: 0;
     padding: 0;
-    font-weight: normal;
-  }
-
-  ol,
-  ul {
-    list-style: none;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  main {
+    font-family: 'Roboto', sans-serif;
     background: #ededed;
     color: #4B5658;
+    line-height: 1.6;
   }
-
-  .icons-social a {
-    color: #4B5658;
-  }
-
-  .icons-social a svg path {
-    fill: #4B5658;
-  }
-
-  html {
-    font-family: 'Roboto', sans-serif;
-  }
-
-  @media (max-width: 576px) {
-    html {
-      font-size: 18;
-    }
-  }
-
-  @media (min-width: 576px) {
-    html {
-      font-size: 18;
-    }
-  }
-
-  @media (min-width: 768px) {
-    html {
-      font-size: 18;
-    }
-  }
-
-  @media (min-width: 992px) {
-    html {
-      font-size: 20;
-    }
-  }
-
-  @media (min-width: 1200px) {
-    html {
-      font-size: 20px;
-    }
-  }
-
-  .icons-social i {
-    font-size: 1.9em;
-  }
-
-  /* Custom Styles */
 
   main {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     justify-content: center;
-    padding: 0 30px;
+    padding: 40px 20px;
+    align-items: center;
+  }
+
+  .content-card {
+    background: white;
+    padding: 60px 50px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    max-width: 700px;
+    width: 100%;
     text-align: center;
   }
 
-  main .intro {
+  .intro {
     font-family: 'Reem Kufi', sans-serif;
-    font-size: 3.00em;
+    font-size: 3em;
     font-weight: 700;
+    color: #4B5658;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid #4B5658;
   }
 
-  main .tagline {
-    font-size: 1.0rem;
-    margin: 2rem 0;
-    font-weight: 100;
+  .tagline {
+    font-size: 1.2rem;
+    margin: 30px 0;
+    font-weight: 300;
+    color: #4B5658;
+    line-height: 1.8;
   }
 
-  .icons-social i {
-    padding: 15px;
+  .icons-social {
+    margin: 20px 0;
   }
 
-  .devto {
-    margin-bottom: -0.20rem;
+
+  .icons-social i,
+  .icons-social iconify-icon {
+    font-size: 2em;
+    color: #4B5658;
+    transition: all 0.3s ease;
+    vertical-align: middle;
+    line-height: 1;
+    display: inline-block;
   }
 
-  .devto svg {
-    margin-bottom: -0.20rem;
-    margin-left: 0.675rem;
-    width: 2.65rem;
-    height: 2.65rem;
+  .icons-social .komoot-icon {
+    font-size: 2em;
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: -0.1em;
   }
 
-  a:link {
+  .icons-social a {
+    color: #4B5658;
     text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+  }
+
+  .icons-social a:hover i,
+  .icons-social a:hover iconify-icon {
+    color: #2c3e50;
+    transform: scale(1.15);
+  }
+
+
+  .main-actions {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin: 40px 0 30px 0;
+  }
+  .main-action-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #ededed;
+    color: #4B5658;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.15em;
+    font-weight: 500;
+    padding: 18px 32px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    cursor: pointer;
+  }
+  .main-action-btn:hover {
+    background: #d6d6d6;
+    color: #2c3e50;
+    transform: translateY(-2px) scale(1.04);
+    text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    .content-card {
+      padding: 40px 30px;
+    }
+
+    .intro {
+      font-size: 2.2em;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+    }
+
+    .icons-social i,
+    .icons-social iconify-icon {
+      font-size: 1.7em;
+    }
   }
 </style>
 
@@ -148,25 +161,45 @@
 
 <body>
   <main>
-    <div class="intro">Francesco Ranellucci</div>
-    <div class="tagline">Computer engineering student, passionate about technology and sports.
-      <br> <br> <br>
+    <div class="content-card">
+      <div class="intro">Francesco Ranellucci</div>
+      <div class="tagline">
+        Software developer, passionate about technology and sports.
+      </div>
+      
+
+      <div class="main-actions">
+        <a class="main-action-btn" target="_blank" href="./resume.pdf" title="Resume">
+          <i class="fas fa-address-card"></i>
+          Resume
+        </a>
+        <a class="main-action-btn" target="_blank" href="./adventures.html" title="Adventures">
+          <i class="fas fa-bicycle"></i>
+          <i class="fas fa-mountain"></i>
+          Adventures
+        </a>
+      </div>
+
       <div class="icons-social">
-        <nobr><a target="_blank" href="./resume.pdf"><i class="fas fa-address-card"></i></a><br></nobr>
-        <nobr><a target="_blank" href="./adventures.html"><i class="fas fa-bicycle"></i>/<i class="fas fa-mountain"></i></a><br></nobr>
+        <a target="_blank" href="https://github.com/frr0" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a target="_blank" href="https://gitlab.com/fra07" title="GitLab">
+          <i class="fab fa-gitlab"></i>
+        </a>
+        <a target="_blank" href="mailto:fra.ranellucci@gmail.com" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a target="_blank" href="https://linkedin.com/in/fr07" title="LinkedIn">
+          <i class="fab fa-linkedin-square"></i>
+        </a>
+        <a target="_blank" href="https://www.strava.com/athletes/45162421" title="Strava">
+          <i class="fab fa-strava"></i>
+        </a>
+        <a target="_blank" href="https://www.komoot.it/user/2696417825775" title="Komoot">
+          <iconify-icon icon="simple-icons:komoot" class="komoot-icon"></iconify-icon>
+        </a>
       </div>
     </div>
-    <div class="icons-social">
-
-      <a target="_blank" href="https://github.com/frr0"><i class="fab fa-github"></i></a>
-      <a target="_blank" href="https://gitlab.com/fra07"><i class="fab fa-gitlab"></i></a>
-      <a target="_blank" href="mailto:fra.ranellucci@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a target="_blank" href="https://linkedin.com/in/fr07"><i class="fab fa-linkedin-square"></i></a>
-      <a target="_blank" href="https://www.strava.com/athletes/45162421"><i class="fab fa-strava"></i></a>&nbsp;&nbsp;
-      <a target="_blank" href="https://www.komoot.it/user/2696417825775"><font size="6"><iconify-icon icon="simple-icons:komoot"></iconify-icon></font></a>
-
-
   </main>
-
-
 </body>
