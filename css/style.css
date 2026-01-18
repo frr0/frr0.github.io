@@ -1,0 +1,41 @@
+.nav-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 auto 24px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 24px;
+}
+.nav-list li {
+	text-align: center;
+	display: inline;
+}
+/* Navigation list styles for all pages */
+.nav-list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	text-align: left;
+}
+.nav-list li {
+	text-align: center;
+}
+body { font-family: 'Roboto', serif; max-width: 900px; margin: 0 auto; padding: 32px; background: #ededed; color: #222; }
+h1 { font-weight: 700; margin-top: 32px; margin-bottom: 12px; text-align: center; }
+.divider { width: 60px; height: 4px; background: #222; margin: 0 auto 18px auto; border-radius: 2px; }
+h2, h3 { font-weight: 700; margin-top: 32px; margin-bottom: 12px; }
+ul { margin-left: 24px; }
+.section { margin-bottom: 32px; }
+.resume-title { margin-bottom: 24px; }
+.project-list, .skills-list, .edu-list { margin-left: 24px; }
+.adventure-list li, .main-list li { margin-bottom: 8px; }
+.adventure-list a, .main-list a { color: #2c3e50; text-decoration: none; font-weight: 500; }
+.adventure-list a:hover, .main-list a:hover { color: #0077cc; text-decoration: underline; }
+.fa-strava { margin-left: 8px; font-size: 0.9em; }
+.social-links { margin-top: 40px; text-align: center; }
+.social-links a { color: #2c3e50; text-decoration: none; font-weight: 500; margin: 0 12px; font-size: 1.1em; }
+.social-links a:hover { color: #0077cc; text-decoration: underline; }
+.intro { text-align: center; font-size: 1.2em; font-weight: 300; color: #444; margin-bottom: 32px; }
+.main-list { margin: 0 auto; text-align: center; }
