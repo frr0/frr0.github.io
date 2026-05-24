@@ -1,170 +1,19 @@
 <style>
-  html {
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-
+  html { box-sizing: border-box; font-size: 16px; }
+  *, *:before, *:after { box-sizing: inherit; }
   body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background: #ededed;
-    color: #4B5658;
-    line-height: 1.6;
+    margin: 0; padding: 0; font-family: 'Roboto', sans-serif;
+    background: #ffffff; color: #4B5658; line-height: 1.6;
   }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: center;
-    padding: 40px 20px;
-    align-items: center;
-  }
-
-  .content-card {
-    background: white;
-    padding: 60px 50px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    max-width: 700px;
-    width: 100%;
-    text-align: center;
-  }
-
-  .intro {
-    font-family: 'Reem Kufi', sans-serif;
-    font-size: 3em;
-    font-weight: 700;
-    color: #4B5658;
-    margin-bottom: 25px;
-    padding-bottom: 20px;
-    border-bottom: 4px solid #4B5658;
-  }
-
-  .tagline {
-    font-size: 1.2rem;
-    margin: 30px 0;
-    font-weight: 300;
-    color: #4B5658;
-    line-height: 1.8;
-  }
-
-  .icons-social {
-    margin: 20px 0;
-  }
-
-
-  .icons-social i,
-  .icons-social iconify-icon {
-    font-size: 2em;
-    color: #4B5658;
-    transition: all 0.3s ease;
-    vertical-align: middle;
-    line-height: 1;
-    display: inline-block;
-  }
-
-
-
-  .icons-social a {
-    color: #4B5658;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0 10px;
-    transition: all 0.3s ease;
-  }
-
-  .icons-social a:hover i,
-  .icons-social a:hover iconify-icon {
-    color: #2c3e50;
-    transform: scale(1.15);
-  }
-
-
-  .main-actions {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    margin: 40px 0 30px 0;
-  }
-  .main-action-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 240px;
-    gap: 12px;
-    background: #ededed;
-    color: #4B5658;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.15em;
-    font-weight: 500;
-    padding: 18px 32px;
-    text-decoration: none;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    transition: background 0.2s, color 0.2s, transform 0.2s;
-    cursor: pointer;
-  }
-  .main-action-btn:hover {
-    background: #d6d6d6;
-    color: #2c3e50;
-    transform: translateY(-2px) scale(1.04);
-    text-decoration: none;
-  }
-
-  @media (max-width: 768px) {
-    body {
-      display: flex;
-      min-height: 100vh;
-    }
-
-    main {
-      min-height: 100%;
-      padding: 20px;
-      width: 100%;
-    }
-
-    .content-card {
-      padding: 40px 30px;
-    }
-
-    .intro {
-      font-size: 2.2em;
-    }
-
-    .tagline {
-      font-size: 1.1rem;
-    }
-
-    .icons-social i,
-    .icons-social iconify-icon {
-      font-size: 1.7em;
-    }
-
-    .main-actions {
-      flex-direction: column;
-      gap: 16px;
-      margin: 30px 0 20px 0;
-    }
-
-    .main-action-btn {
-      width: 100%;
-      justify-content: center;
-      font-size: 1.05em;
-      padding: 16px 24px;
-    }
-  }
+  html { scroll-behavior: smooth; }
+  main { display:flex; flex-direction:column; min-height:100vh; justify-content:center; align-items:center; padding:40px 20px; }
+  .content-card { background: transparent; padding: 30px 20px; max-width:700px; width:100%; text-align:center; border-radius:0; box-shadow:none; }
+  .intro { font-family: 'Reem Kufi', sans-serif; font-size:3em; font-weight:700; color:#4B5658; margin-bottom:12px; padding-bottom:0; border-bottom: none; }
+  .tagline { font-size:1.2rem; margin: 8px 0 24px 0; font-weight:300; color:#4B5658; line-height:1.6; }
+  ul.simple { list-style: disc; padding-left: 1.2rem; text-align:left; display:inline-block; margin: 10px 20px; }
+  ul.simple a { color: #4B5658; text-decoration: none; }
+  .lists-wrapper { display:flex; gap:40px; justify-content:center; flex-wrap:wrap; }
+  @media (max-width:768px){ main{padding:20px;} .intro{font-size:2.2em;} .lists-wrapper{flex-direction:column; gap:16px;} }
 </style>
 
 <!DOCTYPE html>
@@ -178,9 +27,6 @@
   <title>Francesco Ranellucci</title>
 
   <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
-  <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 
 </head>
 
@@ -191,39 +37,21 @@
       <div class="tagline">
         Software developer, passionate about technology and sports.
       </div>
-      
 
-      <div class="main-actions">
-        <a class="main-action-btn" target="_blank" href="./resume.pdf" title="Resume">
-          <i class="fas fa-address-card"></i>
-          Resume
-        </a>
-        <a class="main-action-btn" href="./adventures.html" title="Adventures">
-          <i class="fas fa-bicycle"></i>
-          <i class="fas fa-mountain"></i>
-          Adventures
-        </a>
-      </div>
+      <div class="lists-wrapper">
+        <ul class="simple">
+          <li><a target="_blank" href="./resume.pdf">Resume</a></li>
+          <li><a href="./adventures.html">Adventures</a></li>
+        </ul>
 
-      <div class="icons-social">
-        <a target="_blank" href="https://github.com/frr0" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a target="_blank" href="https://gitlab.com/fra07" title="GitLab">
-          <i class="fab fa-gitlab"></i>
-        </a>
-        <a target="_blank" href="mailto:fra.ranellucci@gmail.com" title="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-        <a target="_blank" href="https://linkedin.com/in/fr07" title="LinkedIn">
-          <i class="fab fa-linkedin-square"></i>
-        </a>
-        <a target="_blank" href="https://www.strava.com/athletes/45162421" title="Strava">
-          <i class="fab fa-strava"></i>
-        </a>
-        <a target="_blank" href="https://www.komoot.it/user/2696417825775" title="Komoot">
-          <iconify-icon icon="simple-icons:komoot" class="komoot-icon"></iconify-icon>
-        </a>
+        <ul class="simple">
+          <li><a target="_blank" href="https://github.com/frr0">GitHub</a></li>
+          <li><a target="_blank" href="https://gitlab.com/fra07">GitLab</a></li>
+          <li><a href="mailto:fra.ranellucci@gmail.com">Email</a></li>
+          <li><a target="_blank" href="https://linkedin.com/in/fr07">LinkedIn</a></li>
+          <li><a target="_blank" href="https://www.strava.com/athletes/45162421">Strava</a></li>
+          <li><a target="_blank" href="https://www.komoot.it/user/2696417825775">Komoot</a></li>
+        </ul>
       </div>
     </div>
   </main>
