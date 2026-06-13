@@ -10,6 +10,8 @@
   h2{font-family:'Reem Kufi',sans-serif;font-size:1.3em;font-weight:600;color:#4B5658;margin-top:24px;margin-bottom:8px;padding-left:0;border-left:none}
   ul{list-style:none;padding-left:0;margin:0 0 18px 0}
   ul>li{padding:6px 0;line-height:1.5}
+  /* Highlight small notable items: keep same font-size, add bullet and slight bold */
+  .highlight-item{display:list-item;list-style-type:disc;list-style-position:outside;margin-left:1rem;font-weight:600}
   a{color:#4B5658;text-decoration:none;transition:all .15s ease;font-weight:500}
   a:hover{text-decoration:underline;color:#2c3e50}
   @media(max-width:768px){main{padding:20px}h1{font-size:2.0em}h2{font-size:1.1em}}
@@ -51,17 +53,9 @@
 <li><a href="https://www.strava.com/activities/9532096848">Colle della Maddalena - 2023</a></li>
 <li><a href="https://www.strava.com/activities/9010632816">Superga - 2023</a></li>
 </ul>
-<h2 id="notable-rides">Notable rides</h2>
-<ul>
-<li><a href="https://www.strava.com/activities/12476318644">Torino - Milano (155km - 204m) - 2024</a></li>
-<li><a href="https://www.strava.com/activities/12205668404">Torino - Albenga (200km - 1419m) - 2024</a></li>
-<li><a href="https://www.strava.com/activities/12170004586">Castelnuovo Don Bosco (100km - 960m) - 2024</a></li>
-<li><a href="https://www.strava.com/activities/11339948029">Torino - Oropa (111km - 931m) - 2024</a></li>
-<li><a href="https://www.strava.com/activities/8855727489">Torino - Savona (139km - 936m) - 2023</a></li>
-</ul>
 <h2 id="bikepackings">Bikepackings</h2>
 <ul>
-<li>Oulx (Italy) - Barcelona (Spain) - 2025
+<li class="highlight-item">Oulx (Italy) - Barcelona (Spain) - 2025
 <ul>
 <li><a href="https://www.strava.com/activities/15166378004">Oulx - Embrun</a></li>
 <li><a href="https://www.strava.com/activities/15180171854">Enbrun - Saint-Roman-de-Malegarde</a></li>
@@ -70,12 +64,12 @@
 <li><a href="https://www.strava.com/activities/15222374639">Perpignan - Girona</a></li>
 <li><a href="https://www.strava.com/activities/15231878577">Girona - Barcelona</a></li>
 </ul></li>
-<li>Bussoleno (Italy) - Ivrea (Italy) 2025
+<li class="highlight-item">Bussoleno (Italy) - Ivrea (Italy) 2025
 <ul>
 <li><a href="https://www.strava.com/activities/15379758250">Bussoleno - Val d'Isere</a></li>
 <li><a href="https://www.strava.com/activities/15390539197">Val d'Isere - Ivrea</a></li>
 </ul></li>
-<li>Marseille (France) - Albenga (Italy) - 2022
+<li class="highlight-item">Marseille (France) - Albenga (Italy) - 2022
 <ul>
 <li><a href="https://www.strava.com/activities/7590755188">Marseille - La Ciotat (Stage 1/6)</a></li>
 <li><a href="https://www.strava.com/activities/7598381444">La Ciotat - Hyeres (Stage 2/6)</a></li>
@@ -85,9 +79,17 @@
 <li><a href="https://www.strava.com/activities/7620117425">Vallebona - Albenga (Stage 6/6)</a></li>
 </ul></li>
 </ul>
-<h2 id="training-camps">Training Camps</h2>
+<h2 id="notable-rides">Notable rides</h2>
 <ul>
-<li>Tuscany Training Camp - 2025
+<li><a href="https://www.strava.com/activities/12476318644">Torino - Milano (155km - 204m) - 2024</a></li>
+<li><a href="https://www.strava.com/activities/12205668404">Torino - Albenga (200km - 1419m) - 2024</a></li>
+<li><a href="https://www.strava.com/activities/12170004586">Castelnuovo Don Bosco (100km - 960m) - 2024</a></li>
+<li><a href="https://www.strava.com/activities/11339948029">Torino - Oropa (111km - 931m) - 2024</a></li>
+<li><a href="https://www.strava.com/activities/8855727489">Torino - Savona (139km - 936m) - 2023</a></li>
+</ul>
+<!-- <h2 id="training-camps">Training Camps</h2>
+<ul>
+<li class="highlight-item">Tuscany Training Camp - 2025
 <ul>
 <li><a href="https://www.strava.com/activities/13760560165">Training camp day 1.1</a></li>
 <li><a href="https://www.strava.com/activities/13761483800">Training camp day 1.2</a></li>
@@ -99,9 +101,11 @@
 <li><a href="https://www.strava.com/activities/13814178431">Training camp day 7</a></li>
 <li><a href="https://www.strava.com/activities/13820905370">Training camp day 8</a></li>
 </ul></li>
-</ul>
+</ul> -->
 <h2 id="hikes">Hikes</h2>
 <ul>
+<li><a href="https://www.strava.com/activities/16743896560">Bivacco Salvasera - 2025</a></li>
+<li><a href="https://www.strava.com/activities/16476965539">Bivacco Annibale - 2025</a></li>
 <li><a href="https://www.strava.com/activities/14367528397">Monte Soglio - 2025</a></li>
 <li><a href="https://www.strava.com/activities/13216495873">Fontana mura, colle della Roussa e lago Rouen - 2024</a></li>
 <li><a href="https://www.strava.com/activities/13080178207">Bivacco lago Laus e lago della Manica - 2024</a></li>
@@ -127,7 +131,7 @@
 </ul>
 <h2 id="trekkings-backpackings">Trekkings (backpackings)</h2>
 <ul>
-<li>Via degli Dei (Bologna - Firenze) - 2024
+<li class="highlight-item">Via degli Dei (Bologna - Firenze) - 2024
 <ul>
 <li><a href="https://www.strava.com/activities/12005277474">Bologna - Brento</a></li>
 <li><a href="https://www.strava.com/activities/12011321077">Brento - Madonna dei fornelli</a></li>
