@@ -1,0 +1,87 @@
+<style>
+  html{box-sizing:border-box;font-size:16px}
+  *,*:before,*:after{box-sizing:inherit}
+  body{margin:0;padding:0;font-family:'Roboto',sans-serif;background:#ffffff;color:#4B5658;line-height:1.6}
+  html{scroll-behavior:smooth}
+  main{display:flex;flex-direction:column;min-height:100vh;justify-content:flex-start;padding:40px 20px;align-items:center}
+  .tagline{background:transparent;padding:0;max-width:900px;width:100%;box-shadow:none;border-radius:0}
+  .home-link{display:inline-flex;align-items:center;gap:10px;background:transparent;color:#4B5658;border-radius:0;font-size:1em;font-weight:500;padding:0;text-decoration:none;margin-bottom:18px}
+  h1{font-family:'Reem Kufi',sans-serif;font-size:2.4em;font-weight:700;color:#4B5658;margin-bottom:18px;padding-bottom:0;border-bottom:none}
+  h2{font-family:'Reem Kufi',sans-serif;font-size:1.3em;font-weight:600;color:#4B5658;margin-top:24px;margin-bottom:8px;padding-left:0;border-left:none}
+  h3{font-family:'Reem Kufi',sans-serif;font-size:1.05em;font-weight:600;color:#4B5658;margin:0 0 4px 0;padding-left:0}
+  p{margin:0 0 16px 0}
+  .project-list{list-style:none;padding-left:0;margin:0}
+  .project-item{margin:0 0 20px 0;padding-left:1.2rem}
+  .project-item::before{content:'•';position:absolute;margin-left:-1.2rem}
+  .project-title{display:block;margin:0 0 4px 0;color:#4B5658;text-decoration:none;font-weight:500}
+  .project-title:hover{text-decoration:underline}
+  .project-desc{margin:0 0 0 0;font-size:.92em;color:#6a7577;line-height:1.5}
+  .project-list a{color:#4B5658;text-decoration:none;transition:all .15s ease;font-weight:500}
+  .project-list a:hover{text-decoration:underline;color:#2c3e50}
+  @media(max-width:768px){main{padding:20px}h1{font-size:2.0em}}
+</style>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Francesco Ranellucci</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+
+</head>
+
+<body>
+  <main>
+    <a href="/" class="home-link">Back to Home</a>
+    <div class="tagline">
+      <h1>Projects</h1>
+      <p>Selected technical work and experiments.</p>
+
+      <ul class="project-list">
+        <li class="project-item">
+          <a href="./projects/hr_devices/devices.html" class="project-title">Heart Rate Device Comparison</a>
+          <p class="project-desc">Compare heart rate data from two fitness devices using FIT files, visualizations and statistical metrics.</p>
+        </li>
+        <li class="project-item">
+          <a href="./projects/fitness/fitness.html" class="project-title">Fitness Analytics</a>
+          <p class="project-desc">Analysis and visualization of fitness data including performance metrics, HRV, sleep, and VO2max trends.</p>
+        </li>
+        <li class="project-item">
+          <a href="https://github.com/frr0/Fantacitorio-bot" target="_blank" rel="noopener noreferrer" class="project-title">Fantacitorio Telegram bot</a>
+          <p class="project-desc">Unofficial Telegram bot for a television game. Reads team data, tracks points from Propaganda Live, and provides team standings and player information.</p>
+        </li>
+        <li class="project-item">
+          <a href="https://github.com/frr0/Dashboard-ERP" target="_blank" rel="noopener noreferrer" class="project-title">Dashboard-ERP</a>
+        </li>
+        <li class="project-item">
+          <a href="https://github.com/frr0/ZeroBSportsBackOffice" target="_blank" rel="noopener noreferrer" class="project-title">ZeroBSportsBackOffice</a>
+        </li>
+        <li class="project-item">
+          <a href="https://github.com/frr0/.dotfiles" target="_blank" rel="noopener noreferrer" class="project-title">.dotfiles</a>
+        </li>
+        <li class="project-item">
+          <a href="https://github.com/frr0/Covid-Today" target="_blank" rel="noopener noreferrer" class="project-title">Covid-Today</a>
+          <p class="project-desc">Script to open a pdf with the most recent data from Presidenza del Consiglio dei Ministri - Dipartimento della Protezione Civile.</p>
+        </li>
+        <li class="project-item">
+          <a href="https://github.com/frr0/Covid19" target="_blank" rel="noopener noreferrer" class="project-title">Covid19</a>
+          <p class="project-desc">Script to open a pdf with the most recent data from Presidenza del Consiglio dei Ministri - Dipartimento della Protezione Civile.</p>
+        </li>
+        <li class="project-item">
+          <a href="https://github.com/frr0/Allianz-Stadium-Tickets-Alert" target="_blank" rel="noopener noreferrer" class="project-title">Allianz Stadium Tickets Alert</a>
+        </li>
+        <li class="project-item">
+          <a href="https://github.com/frr0/La-Vuelta" target="_blank" rel="noopener noreferrer" class="project-title">La Vuelta</a>
+          <p class="project-desc">Bot for scraping data about general classification and rankings from the La Vuelta cycling race.</p>
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+
+</html>

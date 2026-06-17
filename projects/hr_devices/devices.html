@@ -1,0 +1,101 @@
+<style>
+   html{box-sizing:border-box;font-size:16px}
+   *,*:before,*:after{box-sizing:inherit}
+   body{margin:0;padding:0;font-family:'Roboto',sans-serif;background:#ffffff;color:#4B5658;line-height:1.6}
+   html{scroll-behavior:smooth}
+   main{display:flex;flex-direction:column;min-height:100vh;justify-content:flex-start;padding:40px 20px;align-items:center}
+   .tagline{background:transparent;padding:0;max-width:950px;width:100%;box-shadow:none;border-radius:0}
+   .home-link{display:inline-flex;align-items:center;gap:10px;background:transparent;color:#4B5658;border-radius:0;font-size:1em;font-weight:500;padding:0;text-decoration:none;margin-bottom:18px}
+   h1{font-family:'Reem Kufi',sans-serif;font-size:2.4em;font-weight:700;color:#4B5658;margin-bottom:12px;padding-bottom:0;border-bottom:none}
+   h2{font-family:'Reem Kufi',sans-serif;font-size:1.3em;font-weight:600;color:#4B5658;margin-top:28px;margin-bottom:8px;padding-left:0;border-left:none}
+   p{margin:0 0 16px 0}
+   ul,ol{margin:0 0 16px 20px;padding:0}
+   li{padding:4px 0}
+   a{color:#4B5658;text-decoration:none;transition:all .15s ease;font-weight:500}
+   a:hover{text-decoration:underline;color:#2c3e50}
+   .intro{max-width:760px}
+   .repo-link{margin:0 0 10px 0}
+   .repo-link-label{display:block;font-size:.92em;color:#6a7577;margin-bottom:4px}
+   .repo-link a{display:inline-block;padding:0 0 2px 0;border-bottom:1px solid rgba(75,86,88,.35);font-weight:600;word-break:break-word}
+   .repo-link a:hover{border-bottom-color:#2c3e50;text-decoration:none}
+   .figure-block{margin:18px 0 28px 0}
+   .figure-image{width:100%;max-width:100%;display:block;height:auto}
+   .figure-caption{font-size:.95em;margin-top:8px}
+   @media(max-width:768px){main{padding:20px}h1{font-size:2.0em}}
+</style>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>HR Device Comparison</title>
+
+   <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+
+</head>
+
+<body>
+   <main>
+      <a href="/" class="home-link">Back to Home</a>
+      <div class="tagline">
+         <h1>Heart Rate Device Comparison</h1>
+
+         <div class="intro">
+            <p>This project compares heart rate data recorded by two different fitness devices using FIT files. The goal is to inspect how closely the devices agree, both visually and statistically.</p>
+         </div>
+
+         <p class="repo-link">
+            <span class="repo-link-label">Source code</span>
+            <a href="https://github.com/frr0/hr-device-comparison" target="_blank" rel="noopener noreferrer">GitHub repository for this project</a>
+         </p>
+
+         <h2>What the project includes</h2>
+         <ul>
+            <li>Batch analysis with compare_hr.py</li>
+            <li>Interactive exploration with a Jupyter notebook</li>
+            <li>Time series, difference, and Bland-Altman visualizations</li>
+            <li>Summary metrics such as correlation, MAE, and RMSE</li>
+         </ul>
+
+         <!-- <h2>Usage</h2>
+         <ol>
+            <li>Place your FIT files in the project folder.</li>
+            <li>Run the analysis script or open the notebook for a more exploratory workflow.</li>
+            <li>Review the charts and metrics to judge agreement between devices.</li>
+         </ol> -->
+
+            <div class="metric-card">
+         <div class="figure-block">
+            <img class="figure-image" src="./figs/Figure_1.png" alt="HR Time Series Comparison">
+            <div class="figure-caption">Figure 1: HR Time Series Comparison</div>
+         </div>
+
+         <div class="figure-block">
+            <img class="figure-image" src="./figs/Figure_2.png" alt="HR Difference Plot">
+            <div class="figure-caption">Figure 2: HR Difference Plot</div>
+         </div>
+
+         <div class="figure-block">
+            <img class="figure-image" src="./figs/Figure_3.png" alt="Bland-Altman Plot">
+            <div class="figure-caption">Figure 3: Bland-Altman Plot</div>
+         </div>
+            <!-- </figure>
+            <figure class="figure-card">
+               <img class="figure-image" src="./figs/Figure_2.png" alt="HR Difference Plot">
+               <figcaption class="figure-caption">HR Difference Plot</figcaption>
+            </figure>
+            <figure class="figure-card">
+               <img class="figure-image" src="./figs/Figure_3.png" alt="Bland-Altman Plot">
+               <figcaption class="figure-caption">Bland-Altman Plot</figcaption>
+            </figure> -->
+         </div>
+      </div>
+   </main>
+</body>
+
+</html>
+
