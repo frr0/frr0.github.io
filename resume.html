@@ -1,22 +1,3 @@
-<style>
-  html{box-sizing:border-box;font-size:16px}
-  *,*:before,*:after{box-sizing:inherit}
-  body{margin:0;padding:0;font-family:'Roboto',sans-serif;background:#ffffff;color:#4B5658;line-height:1.6}
-  html{scroll-behavior:smooth}
-  main{display:flex;flex-direction:column;min-height:100vh;justify-content:flex-start;padding:40px 20px;align-items:center}
-  .tagline{background:transparent;padding:0;max-width:900px;width:100%;box-shadow:none;border-radius:0}
-  .home-link{display:inline-flex;align-items:center;gap:10px;background:transparent;color:#4B5658;border-radius:0;font-size:1em;font-weight:500;padding:0;text-decoration:none;margin-bottom:18px}
-  h1{font-family:'Reem Kufi',sans-serif;font-size:2.4em;font-weight:700;color:#4B5658;margin-bottom:18px;padding-bottom:0;border-bottom:none}
-  h2{font-family:'Reem Kufi',sans-serif;font-size:1.2em;font-weight:600;color:#4B5658;margin-top:18px;margin-bottom:8px}
-  .experience{margin:0 0 18px 0;padding-left:0;list-style:none;width:100%}
-  .exp-item{padding:12px 0;border-top:1px solid rgba(75,86,88,0.06)}
-  .exp-item h3{margin:0;font-size:1.05rem;font-weight:700}
-  .exp-meta{font-size:0.95rem;color:#6b7576;margin:6px 0}
-  .exp-bullets{margin:8px 0 0 1rem}
-  .exp-bullets li{margin:6px 0}
-  @media(max-width:768px){main{padding:20px}h1{font-size:2.0em}}
-</style>
-
 <!DOCTYPE html>
 <html>
 
@@ -25,87 +6,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Resume - Francesco Ranellucci</title>
+  <title>Experience - Francesco Ranellucci</title>
 
   <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+  
+  <style>
+    html{box-sizing:border-box;font-size:16px}
+    *,*:before,*:after{box-sizing:inherit}
+    body{margin:0;padding:0;font-family:'Roboto',sans-serif;background:#ffffff;color:#4B5658;line-height:1.6}
+    html{scroll-behavior:smooth}
+    main{display:flex;flex-direction:column;min-height:100vh;justify-content:flex-start;padding:40px 20px;align-items:center}
+    .tagline{background:transparent;padding:0;max-width:900px;width:100%;box-shadow:none;border-radius:0}
+    .home-link{display:inline-flex;align-items:center;gap:10px;background:transparent;color:#4B5658;border-radius:0;font-size:1em;font-weight:500;padding:0;text-decoration:none;margin-bottom:18px}
+    h1{font-family:'Reem Kufi',sans-serif;font-size:2.4em;font-weight:700;color:#4B5658;margin-bottom:18px;padding-bottom:0;border-bottom:none}
+    h2{font-family:'Reem Kufi',sans-serif;font-size:1.2em;font-weight:600;color:#4B5658;margin-top:18px;margin-bottom:8px}
+    .experience{margin:0 0 18px 0;padding-left:0;list-style:none;width:100%}
+    .exp-item{padding:12px 0;border-top:1px solid rgba(75,86,88,0.06)}
+    .exp-item h3{margin:0;font-size:1.05rem;font-weight:700}
+    .exp-meta{font-size:0.95rem;color:#6b7576;margin:6px 0}
+    .exp-bullets{margin:8px 0 0 1rem}
+    .exp-bullets li{margin:6px 0}
+    @media(max-width:768px){main{padding:20px}h1{font-size:2.0em}}
+  </style>
 
 </head>
 
 <body>
-  <!--
-  ===== VECCHIA VERSIONE - COMMENTATA =====
   <main>
     <a href="/" class="home-link">Back to Home</a>
     <div class="tagline">
-      <h1>Resume</h1>
-      <h2>Experience</h2>
-      <ul class="experience">
-        <li class="exp-item">
-          <h3>Junior Software Developer — Atradius</h3>
-          <div class="exp-meta">Dec. 2025 – Present — Remote</div>
-          <ul class="exp-bullets">
-            <li>Serving as a Software Quality Assurance (QA) Engineer with a structured transition path toward Backend Development.</li>
-            <li>Gaining deep domain expertise in Fintech and Insurtech sectors, specifically focusing on credit management systems and insurance policy lifecycles.</li>
-            <li>Executing comprehensive testing suites to ensure software reliability while analyzing business requirements within the banking and insurance regulatory frameworks.</li>
-            <li>Collaborating with senior developers to bridge the gap between quality control and backend logic implementation.</li>
-          </ul>
-        </li>
-
-        <li class="exp-item">
-          <h3>Junior Full Stack Intern — ZeroB s.r.l.</h3>
-          <div class="exp-meta">Sep. 2025 – Dec. 2025 — Turin, Italy</div>
-          <ul class="exp-bullets">
-            <li>Designed and developed a comprehensive ERP module utilizing the MVC (Model-View-Controller) pattern to ensure a clean separation of concerns.</li>
-            <li>Engineered robust REST APIs using Spring Boot and Spring Web; implemented data persistence and CRUD operations via Spring Data JPA.</li>
-            <li>Integrated a secure authentication and authorization system using Spring Security to manage user access levels.</li>
-            <li>Built a responsive user interface with HTML5, CSS3, and JavaScript, featuring a dynamic collapsible sidebar and interactive data tables with search functionality.</li>
-            <li>Integrated Chart.js to provide real-time graphical representations of orders and business categories for data visualization.</li>
-            <li>Leveraged Thymeleaf for server-side rendering and implemented client-side data integrity checks using jQuery Validation.</li>
-          </ul>
-        </li>
-
-        <li class="exp-item">
-          <h3>Software Engineer Intern — National Institute of Metrological Research (INRiM)</h3>
-          <div class="exp-meta">Jul. 2022 – Feb. 2023 — Turin, Italy</div>
-          <ul class="exp-bullets">
-            <li>Developed a user-friendly GUI software for Microsoft Windows using C#, tailored for interfacing with a Gage PCI Digitizer utilized in an advanced non-linear optical microscope setup.</li>
-            <li>Implemented multi-threaded programming to optimize software performance, enabling concurrent processing of data from all 8 channels of the acquisition card. This ensured seamless real-time data acquisition and analysis, even during extended time-lapse experiments.</li>
-            <li>Developed software features for generating high-quality images of analyzed cells and graphical representations, crucial for aiding researchers in analyzing experimental data.</li>
-            <li>Integrated socket communication for seamless interaction between the software and the digitizer device.</li>
-            <li>Leveraged C# libraries such as Bitmap, Libtiff, Net, and System to enhance functionality and streamline development.</li>
-            <li>Utilized Git for version control to ensure collaboration and manage software revisions effectively.</li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </main>
-  ===== FINE VECCHIA VERSIONE =====
-  -->
-
-  <main>
-    <a href="/" class="home-link">Back to Home</a>
-    <div class="tagline">
-      <h1>Resume</h1>
-      <h2>Experience</h2>
+      <h1>Experience</h1>
+      <!-- <h2>Professional Background</h2> -->
       <ul class="experience">
         
         <li class="exp-item">
-          <h3>Junior Software Developer — Atradius</h3>
-          <div class="exp-meta">Dec. 2025 – Present — Remote</div>
+          <h3>Junior Software Engineer — Atradius </h3>
+          <div class="exp-meta">Dec. 2025 – Present — Remote, Italy</div>
           <ul class="exp-bullets">
-            <li>Engineered complex database migrations utilizing <strong>Java</strong> and optimized <strong>SQL</strong> scripts within strict Fintech and Insurtech corporate environments.</li>
-            <li>Bridged QA and Backend development by executing automated testing suites and developing custom <strong>Python</strong> scripts for infrastructure automation and low-level data manipulation.</li>
-            <li><strong>Tech Stack:</strong> Java, Python, SQL, QA Automation</li>
+            <li>Engineered custom Python scripts and executed data migration tasks using SQL queries for production databases.</li>
+            <li>Managed Quality Assurance (QA) and UAT phases, collaborating within an Agile environment to gather requirements and demonstrate software features.</li>
           </ul>
         </li>
 
         <li class="exp-item">
-          <h3>Junior Full Stack Intern — ZeroB s.r.l.</h3>
+          <h3>Full Stack Software Engineer Intern — ZeroB s.r.l.</h3>
           <div class="exp-meta">Sep. 2025 – Dec. 2025 — Turin, Italy</div>
           <ul class="exp-bullets">
-            <li>Developed a production-ready ERP module backend using <strong>Spring Boot</strong>, <strong>Spring Security</strong>, and <strong>Spring Data JPA</strong> to deliver robust and scalable REST APIs.</li>
-            <li>Built a highly responsive <strong>React</strong> frontend featuring interactive data tables and real-time business visualizations using <strong>Chart.js</strong>.</li>
-            <li><strong>Tech Stack:</strong> Java, Spring Boot, React, JavaScript, Chart.js, Thymeleaf</li>
+            <li>Built a production-ready ERP module backend using Spring Boot, Spring Security, and Spring Data JPA to deliver robust REST APIs.</li>
+            <li>Created a responsive, interactive frontend using HTML5, CSS3, JavaScript, and Chart.js to provide real-time business data visualization.</li>
           </ul>
         </li>
 
@@ -113,9 +61,8 @@
           <h3>Software Engineer Intern — National Institute of Metrological Research (INRiM)</h3>
           <div class="exp-meta">Jul. 2022 – Feb. 2023 — Turin, Italy</div>
           <ul class="exp-bullets">
-            <li>Developed a high-performance, multi-threaded <strong>C#</strong> application to interface via network sockets with a Gage PCI Digitizer, processing 8-channel real-time data streams concurrently.</li>
-            <li>Integrated software controls directly with advanced multiphoton laser microscopy setups (CARS, SHG, TPEF) to generate live, high-quality cellular imaging.</li>
-            <li><strong>Tech Stack:</strong> C#, .NET, Multi-Threading, Socket Programming, Git</li>
+            <li>Engineered a custom C# Windows Forms application to interface with a Gage PCI Digitizer for advanced non-linear optical microscopes.</li>
+            <li>Implemented multi-threading to concurrently process 8-channel hardware data and integrated TCP/IP sockets for real-time cellular imaging.</li>
           </ul>
         </li>
       </ul>
